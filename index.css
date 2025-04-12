@@ -1,36 +1,45 @@
-.todo-item {
-    list-style-type: none;
-    align-items: center;
+.container {
+    background-color: #ffc2a0;
+    /* height: 100vh; */
     display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
-    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .inner-container {
+    background-color: white;
     margin: 10px;
-    border-radius: 10px;
-  }
-  /* .inner-container {
-    background-color: white;
-  } */
-  .delete-btn {
-    background-color: white;
-    color: #ff0b37;
-    border: 2px solid #ff0b37;
-    padding: 10px 15px;
-    margin-bottom: 5px;
-  }
-  .title {
-    color: #000000;
-    font-size: 16px;
-    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    border-radius: 20px;
   }
   @media screen and (min-width: 768px) {
-    .title {
-      font-size: 24px;
+    .inner-container {
+      padding: 48px;
+      margin-top: 96px;
+      margin-bottom: 96px;
     }
-    .delete-btn {
-      font-size: 18px;
-      padding: 8px 16px 8px 16px;
-      margin-left: 32px;
+  }
+  .heading {
+    font-size: 30px;
+    font-family: 'Roboto';
+    color: #ff8542;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    .heading {
+      font-size: 48px;
+      margin-top: 32px;
+      margin-bottom: 48px;
     }
+  }
+  .todos-list {
+    padding-left: 0px;
   }
   
